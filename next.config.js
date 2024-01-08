@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  appDir: true,
   distDir: '.build',
   basePath: '/myapp',
   assetPrefix: 'https://cdn.staticprefix.com/abc/123/'
