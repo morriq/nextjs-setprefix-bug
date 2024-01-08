@@ -12,7 +12,7 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   createServer(async (req, res) => {
     try {
-      // app.setAssetPrefix('https://cdn.dynamicprefix.com/abc/123/')
+      app.setAssetPrefix('https://cdn.dynamicprefix.com/abc/123/')
       await handle(req, res)
     } catch (err) {
       console.error('Error occurred handling', req.url, err)
